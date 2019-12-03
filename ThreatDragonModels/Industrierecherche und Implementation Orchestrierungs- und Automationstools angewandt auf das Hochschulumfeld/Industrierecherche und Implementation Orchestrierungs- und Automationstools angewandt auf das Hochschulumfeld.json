@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "Industrierecherche und Implementation Orchestrierungs- und Automationstools angewandt auf das Hochschulumfeld",
+    "owner": "SPREN Gruppe | Baumeler, Neyerlin, Hunziker, Sturzenegger",
+    "description": "- Vierschiedene Module (Subjects) benötigen komplexe, virtualisierte Infrastrukturen. (Bsp.: INTROL, ISL,..)\n- Deployment ist momentan oft aufwändige manuelle Arbeit \n- Der Mensch als Fehlerquelle kann nicht komplett ausgeschlossen werden\n___________________________________________________________________\nZiel Projekt: Evaluation einer vollautomatisierten Lösung\nZiel SPREN: Risk Assessment & Threat Model"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Lothar Gramelspacher"
+  }
+}
