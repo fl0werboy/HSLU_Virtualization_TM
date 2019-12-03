@@ -10,7 +10,577 @@
       {
         "title": "Virtualisierte Laborumgebung",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 651,
+                "y": 454
+              },
+              "angle": 0,
+              "id": "297c5057-60e6-4005-950f-ac8d0a8e2ab9",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Student"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 654,
+                "y": 99
+              },
+              "angle": 0,
+              "id": "0828e0f4-2c53-4270-90d5-02554dcc3025",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "HSLU Lab Admins"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 335,
+                "y": 457
+              },
+              "angle": 0,
+              "id": "df5b01a1-4d98-45bf-954b-5ba39d83a756",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "VMs"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 30,
+                "y": 20
+              },
+              "target": {
+                "x": 51,
+                "y": 567
+              },
+              "vertices": [
+                {
+                  "x": 286,
+                  "y": 270
+                }
+              ],
+              "id": "c2542a26-fce8-43be-935b-07df56c4d48f",
+              "z": 5,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "297c5057-60e6-4005-950f-ac8d0a8e2ab9"
+              },
+              "target": {
+                "id": "df5b01a1-4d98-45bf-954b-5ba39d83a756"
+              },
+              "vertices": [
+                {
+                  "x": 570,
+                  "y": 526
+                }
+              ],
+              "id": "0dc99676-95ff-4825-aea6-996f3e826045",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "RDP",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "protocol": "rdp",
+              "isEncrypted": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "df5b01a1-4d98-45bf-954b-5ba39d83a756"
+              },
+              "target": {
+                "id": "297c5057-60e6-4005-950f-ac8d0a8e2ab9"
+              },
+              "vertices": [
+                {
+                  "x": 582,
+                  "y": 465
+                }
+              ],
+              "id": "d3452429-4061-453e-abe0-407fb141b277",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "RDP",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "protocol": "rdp",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "0828e0f4-2c53-4270-90d5-02554dcc3025"
+              },
+              "target": {
+                "id": "35690098-11c0-483d-bfba-4b2646198607"
+              },
+              "vertices": [
+                {
+                  "x": 573,
+                  "y": 113
+                }
+              ],
+              "id": "4135facc-d7ce-4162-b2af-6c3ae056a817",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5330643214434647,
+                    "offset": 1.7002548601916436
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "SSH",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "protocol": "ssh",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "35690098-11c0-483d-bfba-4b2646198607"
+              },
+              "target": {
+                "id": "0828e0f4-2c53-4270-90d5-02554dcc3025"
+              },
+              "vertices": [
+                {
+                  "x": 575,
+                  "y": 168
+                }
+              ],
+              "id": "5d559ef1-8b6d-4bd7-b262-58315d45c27e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "SSH",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "protocol": "ssh",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 340,
+                "y": 99
+              },
+              "angle": 0,
+              "id": "35690098-11c0-483d-bfba-4b2646198607",
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Deployment\nInfrastructure"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1,
+                "y": 350
+              },
+              "angle": 0,
+              "id": "d84ee906-8c4c-46b3-b634-4c27f3ebaa44",
+              "z": 12,
+              "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Only way for them to connect to the infrastructure is via VPN. Therefore unauthenticated access has already been mitigated.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
+                },
+                "text": {
+                  "text": "Student @ Home using a\nVPN client"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 162,
+                "y": 227
+              },
+              "angle": 0,
+              "id": "0221f08d-be4d-49b2-92c4-97c3c46c871d",
+              "z": 13,
+              "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Infrastructure for Students to connect to HSLU network remotely has already been built.",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
+                },
+                "text": {
+                  "text": "Network Access Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "d84ee906-8c4c-46b3-b634-4c27f3ebaa44"
+              },
+              "target": {
+                "id": "0221f08d-be4d-49b2-92c4-97c3c46c871d"
+              },
+              "vertices": [
+                {
+                  "x": 114,
+                  "y": 305
+                }
+              ],
+              "id": "978b4e16-7c5a-46d1-b0f3-454ed29d14c8",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5241793263097627,
+                    "offset": 3.1929852899874653
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "OpenVPN",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "hasOpenThreats": false,
+              "protocol": "openvpn",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "outOfScope": true,
+              "reasonOutOfScope": "Standard protocols for connecting to a secured infrastructure. Unknown details.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isOutOfScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "0221f08d-be4d-49b2-92c4-97c3c46c871d"
+              },
+              "target": {
+                "id": "d84ee906-8c4c-46b3-b634-4c27f3ebaa44"
+              },
+              "vertices": [
+                {
+                  "x": 213,
+                  "y": 341
+                }
+              ],
+              "id": "9c7e3acb-a6f6-4809-b75d-31259e7d2bb7",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "OpenVPN",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "openvpn",
+              "outOfScope": true,
+              "reasonOutOfScope": "Standard protocols for connecting to a secured infrastructure. Unknown details.",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isOutOfScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "35690098-11c0-483d-bfba-4b2646198607"
+              },
+              "target": {
+                "id": "df5b01a1-4d98-45bf-954b-5ba39d83a756"
+              },
+              "vertices": [
+                {
+                  "x": 418,
+                  "y": 282
+                }
+              ],
+              "id": "964b112a-d33e-4201-babb-829af81df526",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Blast Extreme",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "protocol": "blast extreme",
+              "isEncrypted": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 387,
+                "y": 451
+              },
+              "target": {
+                "x": 315,
+                "y": 309
+              },
+              "vertices": [
+                {
+                  "x": 367,
+                  "y": 367
+                }
+              ],
+              "id": "3ba79198-50ff-40b1-a0bb-b193b62250a8",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "RDP",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "protocol": "rdp",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 304,
+                "y": 312
+              },
+              "target": {
+                "id": "df5b01a1-4d98-45bf-954b-5ba39d83a756"
+              },
+              "vertices": [
+                {
+                  "x": 317,
+                  "y": 377
+                }
+              ],
+              "id": "fcbe960d-98f5-4e91-bf22-d77218a2b811",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "RDP",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 18,
+              "hasOpenThreats": false,
+              "protocol": "rdp",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 842
+        }
       }
     ],
     "reviewer": "Lothar Gramelspacher"
